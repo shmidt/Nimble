@@ -48,6 +48,7 @@
 		A9541F3617935B88008D92FC /* NimbleStackCreationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9541F3517935B88008D92FC /* NimbleStackCreationTests.m */; };
 		A9541F3717935C73008D92FC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9040B8F178E106400CCE8EF /* CoreData.framework */; };
 		A97225B017949A88005C6DDE /* NimbleSaversTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2F89D3C30BFCFA6C2FB0 /* NimbleSaversTests.m */; };
+		D0BC370717F30E16008E42B9 /* NSManagedObject+NimbleContexts.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC370617F30E16008E42B9 /* NSManagedObject+NimbleContexts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,8 @@
 		A9541F261793572A008D92FC /* NimbleDemo Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NimbleDemo Tests-Prefix.pch"; sourceTree = "<group>"; };
 		A9541F2C1793573E008D92FC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A9541F3517935B88008D92FC /* NimbleStackCreationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NimbleStackCreationTests.m; path = Tests/NimbleStackCreationTests.m; sourceTree = "<group>"; };
+		D0BC370517F30E16008E42B9 /* NSManagedObject+NimbleContexts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+NimbleContexts.h"; sourceTree = "<group>"; };
+		D0BC370617F30E16008E42B9 /* NSManagedObject+NimbleContexts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+NimbleContexts.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,8 @@
 				62DD274A54F5D5F2A543FA5C /* NimbleStore+Defaults.m */,
 				62DD25D6FED930D81F3498E2 /* NSManagedObjectContext+NimbleContexts.h */,
 				62DD25C177CDA6869D4E8E31 /* NSManagedObjectContext+NimbleContexts.m */,
+				D0BC370517F30E16008E42B9 /* NSManagedObject+NimbleContexts.h */,
+				D0BC370617F30E16008E42B9 /* NSManagedObject+NimbleContexts.m */,
 				62DD2D61205FAFA993D9477E /* NSManagedObject+Creators.h */,
 				62DD2C83A62C1D12F54F7346 /* NSManagedObject+Creators.m */,
 				62DD2DCF294604E4A28EAB96 /* NimbleStore+Savers.h */,
@@ -403,7 +408,7 @@
 						};
 					};
 					A9541F181793572A008D92FC = {
-						TestTargetID = A9040B5A178E0ECC00CCE8EF /* NimbleDemo */;
+						TestTargetID = A9040B5A178E0ECC00CCE8EF;
 					};
 				};
 			};
@@ -469,6 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BC370717F30E16008E42B9 /* NSManagedObject+NimbleContexts.m in Sources */,
 				A9040B6B178E0ECC00CCE8EF /* main.m in Sources */,
 				62DD2F5A34897B71C59F24B7 /* AppDelegate.m in Sources */,
 				62DD28BC1B0827C5BEE816F2 /* Model.xcdatamodel in Sources */,

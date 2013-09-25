@@ -24,6 +24,7 @@
 #import "NimbleStore.h"
 #import "NimbleStore+Defaults.h"
 #import "NSManagedObjectContext+NimbleContexts.h"
+#import "NSManagedObject+NimbleContexts.h"
 #import "UIDevice+Version.h"
 
 NSString *const NBCloudStoreWillReplaceLocalStore = @"NBCloudStoreWillReplaceLocalStore";

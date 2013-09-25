@@ -26,7 +26,7 @@
 
 @implementation NSManagedObject (Creation)
 
-+ (instancetype)nb_createInContextOfType:(NBContextType)contextType
++ (instancetype)nb_inContextOfType:(NBContextType)contextType
 {
   NSManagedObjectContext *context = [NSManagedObjectContext nb_contextForType:contextType];
   return [self pr_createInContext:context];
@@ -36,7 +36,7 @@
 {
   NSParameterAssert(dictionary);
 
-  NSManagedObject *objectCreated = [self nb_createInContextOfType:contextType];
+  NSManagedObject *objectCreated = [self nb_inContextOfType:contextType];
   [dictionary enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
     [objectCreated setValue:obj forKey:key];
   }];
