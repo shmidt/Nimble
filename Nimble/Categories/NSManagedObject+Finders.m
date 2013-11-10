@@ -229,6 +229,20 @@
 
   return fetchedResultsController;
 }
+//Count
++ (int)count;
+{
+    return [self countWithPredicate:nil];
+}
++ (int)countWithPredicate:(NSPredicate *)searchTerm;
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:NSStringFromClass(self.class)];
+
+    fetchRequest.predicate = searchTerm;
+    
+    NSError *error = nil;
+    return  [[NimbleStore nb_mainContext] countForFetchRequest:fetchRequest error:&error];
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
